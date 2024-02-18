@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ARTST</h1>
+    <div id="cart">
+      <span>Carrinho: R$ <span id="cart-total">0.00</span></span>
+    </div>
+  </header>
+  
+  <main>
+    <div id="art-carousel">
+      <div class="artwork">
+        <img class="img" src="frame.png" alt="Obra de arte 1">
+        <div class="info">
+          <h2>Obra de Arte 1</h2>
+          <p>Artista: Nome do Artista</p>
+          <p>Preço: R$ 100.00</p>
+          <br>
+          <button class="add-to-cart" data-price="100.00">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+      <div class="artwork">
+        <img class="img" src="frame.png" alt="Obra de arte 2">
+        <div class="info">
+          <h2>Obra de Arte 2</h2>
+          <p>Artista: Nome do Artista</p>
+          <p>Preço: R$ 500.00</p>
+          <br>
+          <button class="add-to-cart" data-price="500.00">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+      <div class="artwork">
+        <img class="img" src="frame.png" alt="Obra de arte 3">
+        <div class="info">
+          <h2>Obra de Arte 3</h2>
+          <p>Artista: Nome do Artista</p>
+          <p>Preço: R$ 750.00</p>
+          <br>
+          <button class="add-to-cart" data-price="750.00">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ARTST. Todos os direitos reservados.</p>
+    </footer>
+    <div id="overlay"></div>
+  <div style="text-align: center;" id="popup">
+    <button id="close-popup">x</button>
+    <br>
+    <img src="frame.png" alt="Obra de arte 1">
+    <h2 id="popup-title"></h2>
+    <p id="popup-artist"></p>
+    <p id="popup-price"></p>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
